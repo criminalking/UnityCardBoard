@@ -5,11 +5,12 @@ using UnityEngine;
 public class ButtonClick : MonoBehaviour
 {
     public BallPrefab ballPrefab;
+    public GameObject plane;
     
     // Use this for initialization
     void Start()
     {
-        
+        plane = GameObject.Find("Plane");
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class ButtonClick : MonoBehaviour
 	    BallPrefab ball = Instantiate<BallPrefab>(ballPrefab);
 	    ball.transform.localPosition = transform.position;
 	    
-	    ball.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * Random.Range(500, 750));
+	    ball.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * Random.Range(1300, 1350));
 	}
     }
 }
