@@ -7,7 +7,7 @@ It's a game because
 
 ## Files
 
-The .apk file:
+The .apk file: UnityCardBoard.apk
 
 
 ## Project running on CardBoard
